@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pexels API</h1>
+        </div>
+
+        <form>
+            <input type="text" name="srch" id="srch"
+            required placeholder="Enter your search">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="row">
+            <div class="prev"> &lt; </div>
+            <div class="next"> &gt; </div>
+        </div>
+
+        <div>
+            <label for="per-page">Per Page:</label>
+            <select id="per-page">
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="80">80</option>
+            </select>
+        </div>
+    </header>
+
+    <div id="root"></div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

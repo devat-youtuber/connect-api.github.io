@@ -1,0 +1,102 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    background: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+}
+header form{
+    height: 40px;
+    margin: 10px 0;
+}
+header form input,
+header form button{
+    height: 100%;
+    border: 1px solid #0004;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    cursor: pointer;
+}
+header .row{
+    display: flex;
+    font-size: 2em;
+    color:palevioletred;
+    margin: 10px 0;
+}
+.next, .prev{
+    width: 50px;
+    border: 1px solid #0004;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.next:hover, .prev:hover{
+    color: teal;
+}
+/* ---------------------Root---------------- */
+#root{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    height: 400px;
+    margin: 1rem;
+    background: white;
+    box-shadow: 2px 4px 25px #0001;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 2px 8px 20px #0004;
+    transform: translate3d(0, -3px, 0);
+}
+h2{
+    text-align: center;
+    padding: 1.2rem 0;
+    background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (min-width: 600px){
+    .card{
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+@media (min-width: 900px){
+    .card{
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
+.card:nth-child(2n) h2{
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.card:nth-child(4n) h2{
+    background: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+.card:nth-child(5n) h2{
+    background: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+}
