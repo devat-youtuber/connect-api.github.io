@@ -1,5 +1,4 @@
 # connect-api.github.io
-Demo: https://devat-youtuber.github.io/todolist-reactjs/
 
 Author: Dev AT
 
